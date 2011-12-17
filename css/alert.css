@@ -1,0 +1,40 @@
+.microcf {
+  zoom: 1; }
+  .microcf:before, .microcf:after {
+    content: "";
+    display: table; }
+  .microcf:after {
+    clear: both; }
+
+div.alert-box {
+  position: relative;
+  display: block;
+  margin: 3em;
+  padding: 18px 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #666666;
+  font-weight: bold;
+  text-align: center;
+  color: white; }
+  div.alert-box.slide {
+    margin: 0; }
+  div.alert-box.success {
+    background-color: #7fae00;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
+  div.alert-box.warning {
+    background-color: #c08c00;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
+  div.alert-box.error {
+    background-color: #c00000;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
+  div.alert-box a.close {
+    position: absolute;
+    right: 4px;
+    top: 0px;
+    padding: 4px;
+    font-size: 18px;
+    line-height: 45px;
+    text-decoration: none;
+    color: white; }
+    div.alert-box a.close:hover {
+      color: #cccccc; }

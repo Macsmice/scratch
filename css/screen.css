@@ -1,0 +1,7 @@
+.microcf {
+  zoom: 1; }
+  .microcf:before, .microcf:after {
+    content: "";
+    display: table; }
+  .microcf:after {
+    clear: both; }

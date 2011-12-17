@@ -1,0 +1,15 @@
+.microcf {
+  zoom: 1; }
+  .microcf:before, .microcf:after {
+    content: "";
+    display: table; }
+  .microcf:after {
+    clear: both; }
+
+nav {
+  width: 100%;
+  background: #eee; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      float: left; }

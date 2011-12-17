@@ -1,0 +1,201 @@
+.microcf, .grid, .grid .group {
+  zoom: 1; }
+  .microcf:before, .microcf:after, .grid:after, .grid .group:after, .grid:before, .grid.microcf:after, .grid .group:before, .grid .group.microcf:after {
+    content: "";
+    display: table; }
+  .microcf:after, .grid:after, .grid .group:after {
+    clear: both; }
+
+@media only screen and (min-width: 320px) {
+  .grid {
+    width: 100%;
+    margin: 0 auto; }
+    .grid .group {
+      width: 96%;
+      margin: 0 auto;
+      background: #ddd; }
+      .grid .group .span-1 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-2 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-3 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-4 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-5 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-6 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-7 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-8 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-9 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-10 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-11 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-12 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-13 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-14 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-15 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-16 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-17 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-18 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-19 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-20 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-21 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-22 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; }
+      .grid .group .span-23 {
+        width: 96%;
+        margin: 2%;
+        background: #eee;
+        text-align: center; } }
+@media only screen and (min-width: 800px) {
+  .grid .group .span-1 {
+    float: left;
+    width: 0.167%; }
+  .grid .group .span-2 {
+    float: left;
+    width: 4.333%; }
+  .grid .group .span-3 {
+    float: left;
+    width: 8.5%; }
+  .grid .group .span-4 {
+    float: left;
+    width: 12.667%; }
+  .grid .group .span-5 {
+    float: left;
+    width: 16.833%; }
+  .grid .group .span-6 {
+    float: left;
+    width: 21%; }
+  .grid .group .span-7 {
+    float: left;
+    width: 25.167%; }
+  .grid .group .span-8 {
+    float: left;
+    width: 29.333%; }
+  .grid .group .span-9 {
+    float: left;
+    width: 33.5%; }
+  .grid .group .span-10 {
+    float: left;
+    width: 37.667%; }
+  .grid .group .span-11 {
+    float: left;
+    width: 41.833%; }
+  .grid .group .span-12 {
+    float: left;
+    width: 46%; }
+  .grid .group .span-13 {
+    float: left;
+    width: 50.167%; }
+  .grid .group .span-14 {
+    float: left;
+    width: 54.333%; }
+  .grid .group .span-15 {
+    float: left;
+    width: 58.5%; }
+  .grid .group .span-16 {
+    float: left;
+    width: 62.667%; }
+  .grid .group .span-17 {
+    float: left;
+    width: 66.833%; }
+  .grid .group .span-18 {
+    float: left;
+    width: 71%; }
+  .grid .group .span-19 {
+    float: left;
+    width: 75.167%; }
+  .grid .group .span-20 {
+    float: left;
+    width: 79.333%; }
+  .grid .group .span-21 {
+    float: left;
+    width: 83.5%; }
+  .grid .group .span-22 {
+    float: left;
+    width: 87.667%; }
+  .grid .group .span-23 {
+    float: left;
+    width: 91.833%; } }

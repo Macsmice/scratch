@@ -1,0 +1,42 @@
+// Clearfix
+@mixin micro-cf {
+    zoom:1;
+    &:before {
+	    content:"";
+	    display:table;
+	}
+	&:after {
+		@extend :before;
+		clear:both;
+	}
+}
+// Extend mixin to reduce bloat
+.microcf {
+	@include micro-cf;
+}
+
+// Fonts
+@mixin fontStack {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+@mixin box-shadow {
+	-moz-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	-webkit-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	-o-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	-ms-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+}
+
+@mixin radius {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+}
+
+@mixin gradient {
+	background-image: -moz-linear-gradient(100% 100% 90deg, #ddd, white);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#ddd));
+}

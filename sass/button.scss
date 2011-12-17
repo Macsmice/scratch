@@ -1,0 +1,28 @@
+@import "includes/mixins";
+@import "includes/vars";
+
+.button {
+	display: inline-block;
+	margin: 1em 0 1em 1em;
+	padding: 12px 20px;
+	border: 1px solid $gray60;
+	@include radius;
+	background: #ddd;
+	@include gradient;
+	@include box-shadow;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: inset 1px 1px 1px $white;
+	line-height: 1em;
+	color: $gray60;
+	&:hover {
+		background: #ddd;
+		@include gradient; // change for hover effect
+	}
+	&:active {
+
+	}
+}
+
+// add style for including icon

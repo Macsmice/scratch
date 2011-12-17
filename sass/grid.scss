@@ -1,0 +1,61 @@
+@import "includes/mixins";
+@import "includes/vars";
+//@import "compass/utilities";
+
+// Grid Variables 
+// Container width
+$grid-width:		100%;
+// Number of columns
+$columns:			24;
+// Margins, both left and right, value doubles when totalled
+// If set to 0, group-width value left with $grid-width value. Broken.
+$margins:			2%;
+// Gutter total width, divide by for left, right margins
+$gutter:			4%;
+// Row container after margins subtracted
+$group-width:		$grid-width - $margins * 2;
+
+
+// BUG: class="span-$column" doesn't acquire style
+// TODO: still need to consider offseting columns.
+// TODO: user gutter instead of margins for column margins.
+// TODO: RTL, float: right instead
+// TODO: Add other Media Queries
+// TODO: Clean up
+
+@media only screen and (min-width: 320px) {
+	.grid {
+		@extend .microcf;
+		width: $grid-width;
+		margin: 0 auto;
+		.group {
+			@extend .microcf;
+			width: $group-width;
+			margin: 0 auto;
+			background: #ddd; // testing
+			@for $n from 1 to $columns {
+					.span-#{$n} {
+					width: 100% - $margins * 2;
+					margin: $margins;
+					background: #eee;
+					text-align: center; // testing
+				}
+			}
+		}
+	}
+}
+
+// We're not in Mobile anymore Toto [Thanks for the name spelling correction, @HarryB]
+
+@media only screen and (min-width: 800px) {
+	.grid {
+		.group {
+			@for $n from 1 to $columns {
+				.span-#{$n} {
+					float: left;
+					width: ((100%) / $columns) * $n - $margins * 2;
+				}
+			}
+		}
+	}
+}

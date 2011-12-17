@@ -1,0 +1,31 @@
+.microcf {
+  zoom: 1; }
+  .microcf:before, .microcf:after {
+    content: "";
+    display: table; }
+  .microcf:after {
+    clear: both; }
+
+/* Pagination */
+ul.pagination {
+  display: block;
+  height: 24px;
+  margin-left: -5px; }
+  ul.pagination li {
+    float: left;
+    display: block;
+    height: 24px;
+    color: #333333;
+    margin-left: 5px; }
+    ul.pagination li a {
+      display: block;
+      padding: 6px 7px 4px;
+      color: #666666; }
+    ul.pagination li.current a, ul.pagination li:hover a {
+      border-bottom: solid 2px #00a6fc;
+      color: #141414; }
+    ul.pagination li.unavailable a {
+      cursor: default;
+      color: #1a1a1a; }
+    ul.pagination li:hover a {
+      border-bottom: none; }
